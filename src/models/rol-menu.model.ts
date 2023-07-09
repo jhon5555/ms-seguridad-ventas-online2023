@@ -39,6 +39,15 @@ export class RolMenu extends Entity {
   })
   descargar: boolean;
 
+  @property({
+    type: 'number',
+  })
+  rolId?: number;
+
+  @property({
+    type: 'number',
+  })
+  menuId?: number;
 
   constructor(data?: Partial<RolMenu>) {
     super(data);
